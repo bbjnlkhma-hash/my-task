@@ -1,9 +1,9 @@
 const brands = {
   "Amazon Dashboard": ["#ff9900", "a"],
   Microsoft: ["#00a4ef", "M"],
-  Apple: ["#000000", "A"],
+  Apple: ["#df0000", "A"],
   "Facebook Dashboard": ["#1877f2", "f"],
-  Netflix: ["#e50914", "N"],
+  Netflix: ["#ff000d", "N"],
   Nvidia: ["#76b900", "N"],
   Behance: ["#0057ff", "Bē"],
   "Google Dashboard": ["#ea4335", "G"],
