@@ -1,4 +1,4 @@
-# sem.c11
+# my-task
 
 ## 1. my_website (Flask)
 ```
