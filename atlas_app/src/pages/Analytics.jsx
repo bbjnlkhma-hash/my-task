@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 function Bars({ title, keys, field, items }) {
   const max = Math.max(1, ...keys.map((k) => items.filter((t) => t[field] === k).length));
   return (
-    <div className="panel">
+    <div className="panell">
       <b>{title}</b>
       {keys.map((k) => {
         const n = items.filter((t) => t[field] === k).length;
