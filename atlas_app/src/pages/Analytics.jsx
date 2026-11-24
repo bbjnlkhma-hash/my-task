@@ -3,12 +3,12 @@ import { useSelector } from "react-redux";
 function Bars({ title, keys, field, items }) {
   const max = Math.max(1, ...keys.map((k) => items.filter((t) => t[field] === k).length));
   return (
-    <div className="panell">
+    <div className="panel">
       <b>{title}</b>
       {keys.map((k) => {
         const n = items.filter((t) => t[field] === k).length;
         return (
-          <div key={k} className="brow"><span>{k}</span><div className="bar"><div style={{ width: (n / max) * 100 + "%" }} /></div><b>{n}</b></div>
+          <div key={k} className="b"><span>{k}</span><div className="bar"><div style={{ width: (n / max) * 100 + "%" }} /></div><b>{n}</b></div>
         );
       })}
     </div>
