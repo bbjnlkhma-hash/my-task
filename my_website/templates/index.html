@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Миний анхны веб</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="card">
+    <h1>Миний анхны веб</h1>
+    <p>Python Flask веб сайт</p>
+    <form method="POST" action="/">
+      <input type="text" name="name" placeholder="Нэрээ бичнэ үү" required>
+      <button type="submit">Илгээх</button>
+    </form>
+    {% if messages %}
+    <ul>
+      {% for m in messages %}<li>Сайн байна уу, {{ m }}!</li>{% endfor %}
+    </ul>
+    <form method="POST" action="/clear"><button class="ghost" type="submit">Цэвэрлэх</button></form>
+    {% endif %}
+  </div>
+</body>
+</html>
